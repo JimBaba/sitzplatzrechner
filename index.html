@@ -4,6 +4,7 @@
     <title>Sitzrechner DiG</title>
     <meta charset="UTF8">
     <link rel="stylesheet" href="styles.css">
+
 </Head>
     
 <Header>
@@ -11,6 +12,57 @@
 </Header>
 
 <body>
+    <div class="inputs" id="input">
+        <form id="abfrage" action="index.html">
+            Gesamtkapazität: <input id="cap" type="number" name="fullHouse"><br>
+            Anzahl verkaufte Tickets: <input id="vk" type="number" name="tickets"><br>
+            Sitzreihenlänge: <input id="rowL" type="number" name="rowLength"><br>
+            Anzahl freie Sitze zwischen den Gästen: <input id="free" type="number" name="freeSpace"><br>
+        <input type="button" onclick="startGrid()" value="submit">
+        <button id="reset" onclick = window.location.reload()>Neu laden</button>
+        </form> 
+    </div>
+    <div class="introTickets" id="ticket"></div><br>
+
+    <div id="ticketCounts">
+    <div id="1ticket">
+
+    </div><br>
+    <div id="2ticket">
+
+    </div><br>
+    <div id="3ticket">
+
+    </div><br>
+    <div id="4ticket">
+
+    </div><br>
+    <div id="5ticket">
+
+    </div><br>
+    <div id="6ticket">
+
+    </div><br>
+    <div id="7ticket">
+
+    </div><br>
+    <div id="8ticket">
+
+    </div><br>
+    <div id="9ticket">
+
+    </div><br></div>
+        
+    
+    
+    <div id="color-picker">
+        <input type="button" class="btn" id="red">Rot</input>
+        <input type="button" class="btn" id="blue" >Blau</input>
+        <input type="button" class="btn" id="pink">Pink</input>
+        <input type="button" class="btn" id="green">Grün</input>
+        <input type="button" class="btn" id="yellow">Gelb</input>
+        <input type="button" class="btn" id="cornsilk">Löschen</input>
+    </div>
     <div class="gc" id="grid-container">
 
     </div>
