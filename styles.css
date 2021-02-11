@@ -1,0 +1,24 @@
+:root {
+    background-color: rgb(11, 112, 24);
+    --grid-cols: 1;
+    --grid-rows: 1;
+}
+
+#grid-container {
+    display: grid;
+    grid-gap: 1px;
+    grid-template-rows: repeat(var(--grid-rows), 25px);
+    grid-template-columns: repeat(var(--grid-cols), 25px);
+    background-color:  rgb(100,50,250);
+ 
+}
+
+.grid-area {
+    background-color: cornsilk;
+    text-align: center;
+    color: white;
+}
+
+.grid-area > div {
+    background-color: firebrick;
+}
